@@ -1,0 +1,36 @@
+lang: zh-cn
+title: 安道💖集邮
+email: andor.chen.27@gmail
+baseurl: "/stamps" # the subpath of your site, e.g. /blog
+url: "https://about.ac/stamps/" # the base hostname & protocol for your site, e.g. http://example.com
+
+# just-the-docs theme settings
+theme: just-the-docs
+aux_links:
+  '返回主站':
+    - 'https://about.ac'
+callouts:
+  warning:
+    title: 警告
+    color: red
+  note:
+    title: 说明
+    color: green
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Rakefile
+  - README.md
+
+include:
+  - _pages
+
+defaults:
+  -
+    scope:
+      path: "_pages"
+    values:
+      permalink: /:basename/
+      layout: 'page'

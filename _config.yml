@@ -34,3 +34,5 @@ defaults:
     values:
       permalink: /:basename/
       layout: 'page'
+
+markdown: ACKramdownParser

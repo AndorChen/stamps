@@ -6,9 +6,6 @@ url: "https://about.ac/stamps/" # the base hostname & protocol for your site, e.
 
 # just-the-docs theme settings
 theme: just-the-docs
-aux_links:
-  '返回主站':
-    - 'https://about.ac'
 callouts:
   warning:
     title: 警告

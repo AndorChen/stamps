@@ -1,0 +1,42 @@
+{% capture category %}{{ include.category }}{% endcapture %}
+{% capture group %}{{ include.group }}{% endcapture %}
+{% capture figures_base %}{{ site.baseurl }}/assets/figures/{{category}}/{{group}}{% endcapture %}
+
+{%- for stamp in site.data[category][group] -%}
+  <h2 id="{{ stamp.sn }}">{{ stamp.sn }} {{ stamp.title }}</h2>
+  <p>发行日期：{{ stamp.issue_date }}</p>
+  {% assign amount = stamp.names.size | default: 1 %}
+  <figure>
+    {%- if stamp.collection == 'all-in-one' or amount == 1 -%}
+      <img src="{{ figures_base }}/{{ stamp.sn }}.jpg" alt="{{ stamp.sn }}">
+    {%- else -%}
+      {% for i in (1..amount) %}
+      <img src="{{ figures_base }}/{{ stamp.sn }}-{{i}}.jpg" alt="{{ stamp.sn }}">
+      {% endfor %}
+    {%- endif -%}
+    <figcaption>
+    {%- if amount == 1 -%}
+      （1-1）{{ stamp.type }} {{ stamp.title }}
+    {%- else -%}
+      {% for i in (1..amount) %}（{{amount}}-{{i}}）{{ stamp.type }}&emsp;{{ stamp.names[forloop.index0] }}{% if forloop.index != amount %}<br>{% endif %}{% endfor %}
+    {%- endif -%}
+    </figcaption>
+  <figure>
+  {%- if stamp.miniature_sheet -%}
+  <figure>
+    <img src="{{ figures_base }}/{{ stamp.sn }}-m.jpg" alt="{{ stamp.sn }} 小型张">
+    <figcaption>
+      小型张{% if stamp.miniature_sheet.name %} ：{{ stamp.miniature_sheet.name }}{% endif %}
+    </figcaption>
+  </figure>
+  {%- endif -%}
+  {%- if stamp.souvenir_sheet -%}
+  <figure>
+    <img src="{{ figures_base }}/{{ stamp.sn }}-s.jpg" alt="{{ stamp.sn }} 小全张">
+    <figcaption>
+      小全张{% if stamp.souvenir_sheet.name %} ：{{ stamp.souvenir_sheet.name }}{% endif %}
+    </figcaption>
+  </figure>
+  {%- endif -%}
+  {%- if forloop.index != site.data[category][group].size -%}<hr>{%- endif -%}
+{%- endfor -%}

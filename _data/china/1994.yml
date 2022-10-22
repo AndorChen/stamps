@@ -5,3 +5,190 @@
   names:
     - 平安家福
     - 祥瑞兴旺
+
+- sn: 1994-2
+  type: J
+  title: 爱国民主人士（第二组）
+  issue_date: 1994-02-25
+  names:
+    - 陈其尤
+    - 陈书通
+    - 马叙伦
+    - 许德珩
+
+- sn: 1994-3
+  type: T
+  title: 鲟
+  issue_date: 1994-03-18
+  names:
+    - 鳇
+    - 中华鲟
+    - 白鲟
+    - 达氏鲟
+
+- sn: 1994-4
+  type: T
+  title: 沙漠绿化
+  issue_date: 1994-04-21
+  names:
+    - 浩瀚沙海
+    - 沙洲花开
+    - 胡杨成林
+    - 沙漠绿洲
+
+- sn: 1994-5
+  type: T
+  title: 宜兴紫砂陶
+  issue_date: 1994-05-05
+  names:
+    - 明·三足圆壶
+    - 清·四足方壶
+    - 清·八卦束竹壶
+    - 现代·提壁壶
+
+- sn: 1994-6
+  type: J
+  title: 纪念黄埔军校建校七十周年
+  issue_date: 1994-06-16
+
+- sn: 1994-7
+  type: J
+  title: 国际奥林匹克委员会成立一百周年
+  issue_date: 1994-06-23
+
+- sn: 1994-8
+  type: T
+  title: 敦煌壁画（第五组）
+  issue_date: 1994-07-16
+  names:
+    - 唐·飞天
+    - 唐·维摩诘
+    - 唐·张议潮出行图
+    - 唐·魔女
+
+- sn: 1994-9
+  type: J
+  title: 中国古代文学家（第二组）
+  issue_date: 1994-06-25
+  names:
+    - 陶渊明
+    - 曹植
+    - 司马迁
+    - 屈原
+
+- sn: 1994-10
+  type: T
+  title: 昭君出塞
+  issue_date: 1994-08-25
+  names:
+    - 昭君
+    - 出塞
+  miniature_sheet:
+    name: 和亲
+
+- sn: 1994-11
+  type: J
+  title: 第六届远东及南太平洋地区残疾人运动会
+  issue_date: 1994-09-04
+
+- sn: 1994-12
+  type: T
+  title: 武陵源
+  issue_date: 1994-09-25
+  names:
+    - 南天门
+    - 神堂湾（应为“武士驯马”）
+    - 天下第一桥
+    - 御笔峰
+  miniature_sheet:
+    name: 十里画廊
+
+- sn: 1994-13
+  type: T
+  title: 武夷山
+  issue_date: 1994-09-30
+  names:
+    - 玉女峰
+    - 九曲溪
+    - 挂墩
+    - 高山草甸
+  collection: 'all-in-one'
+
+- sn: 1994-14
+  type: T
+  title: 傅抱石作品选
+  issue_date: 1994-10-05
+  names:
+    - 听泉图
+    - 洗手图
+    - 大涤草堂图
+    - 擘阮图
+    - 虎跑
+    - 山阴道上
+
+- sn: 1994-15
+  type: T
+  title: 鹤（中美联合发行）
+  issue_date: 1994-10-09
+  names:
+    - 美洲鹤
+    - 黑颈鹤
+
+- sn: 1994-16
+  type: J
+  title: 万国邮政联盟成立一百二十周年（小型张）
+  issue_date: 1994-10-09
+
+- sn: 1994-17
+  type: T
+  title: 中国古典文学名著——《三国演义》（第四组）
+  issue_date: 1994-11-24
+  names:
+    - 横槊赋诗
+    - 刘备招亲
+    - 威震逍遥津
+    - 火烧连营
+  miniature_sheet:
+    name: 赤壁鏖兵
+
+- sn: 1994-18
+  type: T
+  title: 长江三峡
+  issue_date: 1994-11-04
+  names:
+    - 白帝城
+    - 瞿塘峡
+    - 巫峡
+    - 神女峰
+    - 西陵峡
+    - 屈原祠
+  miniature_sheet:
+    name: 长江三峡
+
+- sn: 1994-19
+  type: J
+  title: 中华全国集邮联合会第四次代表大会（小型张）
+  issue_date: 1994-11-17
+
+- sn: 1994-20
+  type: J
+  title: 经济特区
+  issue_date: 1994-12-10
+  names:
+    - 深圳
+    - 珠海
+    - 汕头
+    - 厦门
+    - 海南
+  collection: all-in-one
+
+- sn: 1994-21
+  type: T
+  title: 中国古塔
+  issue_date: 1994-12-15
+  names:
+    - 西安慈恩寺大雁塔
+    - 泉州开元寺镇国塔
+    - 杭州开化寺六和塔
+    - 开封祐国寺塔
+  souvenir_sheet: yes

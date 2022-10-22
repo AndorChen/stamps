@@ -2,7 +2,7 @@ lang: zh-cn
 title: 安道💖集邮
 email: andor.chen.27@gmail
 baseurl: "/stamps"
-url: "https://about.ac/stamps/"
+url: "https://andorchen.github.io/stamps"
 
 exclude: ['README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'tmp']
 include:

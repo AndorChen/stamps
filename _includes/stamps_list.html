@@ -21,7 +21,7 @@
       {% for i in (1..amount) %}（{{amount}}-{{i}}）{{ stamp.type }}&emsp;{{ stamp.names[forloop.index0] }}{% if forloop.index != amount %}<br>{% endif %}{% endfor %}
     {%- endif -%}
     </figcaption>
-  <figure>
+  </figure>
   {%- if stamp.miniature_sheet -%}
   <figure>
     <img src="{{ figures_base }}/{{ stamp.sn }}-m.jpg" alt="{{ stamp.sn }} 小型张">

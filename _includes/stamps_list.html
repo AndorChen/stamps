@@ -3,15 +3,17 @@
 {% capture figures_base %}{{ site.baseurl }}/assets/figures/{{category}}/{{group}}{% endcapture %}
 
 {%- for stamp in site.data[category][group] -%}
+  {% assign widthes = stamp.image.width | default: 'auto' | split: ',' %}
+  {% assign heights = stamp.image.height | default: 'auto' | split: ',' %}
   <h2 id="{{ stamp.sn }}">{{ stamp.sn }} {{ stamp.title }}</h2>
   <p>发行日期：{{ stamp.issue_date }}</p>
   {% assign amount = stamp.names.size | default: 1 %}
   <figure>
     {%- if stamp.collection == 'all-in-one' or amount == 1 -%}
-      <img src="{{ figures_base }}/{{ stamp.sn }}.jpg" alt="{{ stamp.sn }}">
+      <img src="{{ figures_base }}/{{ stamp.sn }}.jpg" alt="{{ stamp.sn }}" style="width:{{widthes.first}};height:{{heights.first}};">
     {%- else -%}
       {% for i in (1..amount) %}
-      <img src="{{ figures_base }}/{{ stamp.sn }}-{{i}}.jpg" alt="{{ stamp.sn }}">
+      <img src="{{ figures_base }}/{{ stamp.sn }}-{{i}}.jpg" alt="{{ stamp.sn }}-{{i}}" style="width:{{widthes[forloop.index0] | default: widthes.first}};height:{{heights[forloop.index0] | default: heights.first}};">
       {% endfor %}
     {%- endif -%}
     <figcaption>

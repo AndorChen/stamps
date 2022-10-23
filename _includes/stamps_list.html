@@ -24,6 +24,7 @@
     {%- endif -%}
     </figcaption>
   </figure>
+
   {%- if stamp.miniature_sheet -%}
   <figure>
     <img src="{{ figures_base }}/{{ stamp.sn }}-m.jpg" alt="{{ stamp.sn }} 小型张">
@@ -32,6 +33,7 @@
     </figcaption>
   </figure>
   {%- endif -%}
+
   {%- if stamp.souvenir_sheet -%}
   <figure>
     <img src="{{ figures_base }}/{{ stamp.sn }}-s.jpg" alt="{{ stamp.sn }} 小全张">
@@ -40,5 +42,12 @@
     </figcaption>
   </figure>
   {%- endif -%}
+
+  {% capture note_file_path %}_notes/{{category}}/{{group}}/{{ stamp.sn}}.md{% endcapture %}
+  {% assign note_files = site.notes | where: 'path', note_file_path %}
+  {%- if note_files.size != 0 -%}
+    {{ note_files.first.content | markdownify }}
+  {%- endif -%}
+
   {%- if forloop.index != site.data[category][group].size -%}<hr>{%- endif -%}
 {%- endfor -%}
